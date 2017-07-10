@@ -1,0 +1,31 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300);
+
+body {padding-top:50px;color:#878888;}
+.magenta {color:#ec0185;}
+
+h2 {font-family: 'Oswald', sans-serif;font-weight:400;}
+h3 {font-family: 'Oswald', sans-serif;font-weight:300;}
+
+/* FOOTER */
+.footer {background-color:#1a1b1d;color:#fff;}
+.footer a {color:#fff;}
+
+/* POSTSCRIPT */
+.postscript {background-color:#383b3d;color:#fff;}
+
+/* HOME */
+.slideshow-head {position:relative;}
+.slideshow-head .carousel {position:relative;}
+.slideshow-head .headline {position:absolute;z-index:299;top:0;left:0;}
+
+/* NAVIGATION */
+.navbar-default {background: #383b3d;margin-top:0px;font-family: 'Oswald', sans-serif;font-weight:300;font-size:1.2em;text-align:center;text-transform: uppercase;}
+.navbar-default .navbar-nav>li>a {color:#fff;}
+.navbar-default .navbar-nav>li>a:hover {color:#ec0185;}
+
+/* CAROUSEL FADE */
+.carousel-fade .carousel-inner .item {opacity:0;-webkit-transition-property:opacity;-moz-transition-property:opacity;-o-transition-property:opacity;transition-property:opacity;}
+.carousel-fade .carousel-inner .active {opacity:1;}
+.carousel-fade .carousel-inner .active.left, .carousel-fade .carousel-inner .active.right {left:0;opacity:0;z-index:1;}
+.carousel-fade .carousel-inner .next.left, .carousel-fade .carousel-inner .prev.right {opacity:1;}
+.carousel-fade .carousel-control {z-index:2;}
