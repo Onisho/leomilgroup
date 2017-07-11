@@ -5,14 +5,14 @@ exclude: ['README.md']
 #NAVIGATION
 navigation:
 - text: Our Story
-  url: our-story/
+  url: our-story
 - text: Brands and Licesens
-  url: brands-licenses/
+  url: brands-licenses
 - text: Global Presence
-  url: global-presence/
+  url: global-presence
 - text: News
-  url: news/
+  url: news
 - text: Contact
-  url: contact/
+  url: contact
 - text: Collection
-  url: collection/
+  url: collection
