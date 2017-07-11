@@ -32,7 +32,7 @@ h4 {font-family: 'Oswald', sans-serif;font-weight:300;}
 .navbar-default .navbar-nav>li>a {color:#fff;}
 .navbar-default .navbar-nav>li>a:hover {color:#ec0185;}
 .navbar-default .navbar-nav>li>a.collection {background-color:#000;}
-.current {color:red;}
+.navbar-default .navbar-nav>li>a.active {color:#ec0185;}
 
 /* CAROUSEL FADE */
 .carousel-fade .carousel-inner .item {opacity:0;-webkit-transition-property:opacity;-moz-transition-property:opacity;-o-transition-property:opacity;transition-property:opacity;}

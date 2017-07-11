@@ -13,12 +13,12 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             {% for link in site.navigation %}
-              {% assign current = nil %}
-              {% if link.url == page.url %}
-                {% assign current = 'current' %}
+              {% assign active = nil %}
+              {% if page.url == link.url %}
+                {% assign active = 'active' %}
               {% endif %}
               <li class="{% if forloop.first %}first{% endif %} {% if forloop.last %}last{% endif %}">
-                <a class="{{current}}" href="{{site.baseurl}}/{{link.url}}">{{link.text}}</a>
+                <a class="{{active}}" href="{{site.baseurl}}{{link.url}}">{{link.text}}</a>
               </li>
             {% endfor %}
           </ul>
