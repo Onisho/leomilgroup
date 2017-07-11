@@ -1,13 +1,22 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,300);
+@import url(common.css);
 
 body {padding-top:50px;color:#878888;}
 .magenta {color:#ec0185;}
 
 h2 {font-family: 'Oswald', sans-serif;font-weight:400;}
 h3 {font-family: 'Oswald', sans-serif;font-weight:300;}
+h4 {font-family: 'Oswald', sans-serif;font-weight:300;}
+
+/* CONTENT */
+.content p {font-family:'Oswald', sans-serif;font-weight:300;font-size:1.2em;color:#888888;}
+.content h3 {color:#000;}
+@media (min-width: 768px) {
+  .content p.lead {font-size:1.6em;}
+}
 
 /* FOOTER */
-.footer {background-color:#1a1b1d;color:#fff;}
+.footer {background-color:#1a1b1d;color:#7a7b7c;}
 .footer a {color:#fff;}
 
 /* POSTSCRIPT */
@@ -22,6 +31,8 @@ h3 {font-family: 'Oswald', sans-serif;font-weight:300;}
 .navbar-default {background: #383b3d;margin-top:0px;font-family: 'Oswald', sans-serif;font-weight:300;font-size:1.2em;text-align:center;text-transform: uppercase;}
 .navbar-default .navbar-nav>li>a {color:#fff;}
 .navbar-default .navbar-nav>li>a:hover {color:#ec0185;}
+.navbar-default .navbar-nav>li>a.collection {background-color:#000;}
+.current {color:red;}
 
 /* CAROUSEL FADE */
 .carousel-fade .carousel-inner .item {opacity:0;-webkit-transition-property:opacity;-moz-transition-property:opacity;-o-transition-property:opacity;transition-property:opacity;}

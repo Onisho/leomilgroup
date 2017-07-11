@@ -1,2 +1,18 @@
+#BASICS
 baseurl: /leomilgroup
 exclude: ['README.md']
+
+#NAVIGATION
+navigation:
+- text: Our Story
+  url: our-story/
+- text: Brands and Licesens
+  url: brands-licenses/
+- text: Global Presence
+  url: global-presence/
+- text: News
+  url: news/
+- text: Contact
+  url: contact/
+- text: Collection
+  url: collection/

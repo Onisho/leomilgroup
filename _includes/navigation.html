@@ -11,14 +11,19 @@
           <a class="navbar-brand" href="{{site.baseurl}}/index">Leomil Group</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
+          {% unless page.layout == 'front' %}
           <ul class="nav navbar-nav">
-            <li><a href="{{site.baseurl}}/our-story">Our Story</a></li>
-            <li><a href="{{site.baseurl}}/brands-licenses">Brands &amp; Licenses</a></li>
-            <li><a href="{{site.baseurl}}/global-presence">Global Presence</a></li>
-            <li><a href="{{site.baseurl}}/news">News</a></li>
-            <li><a href="{{site.baseurl}}/contact">Contact</a></li>
-            <li><a href="https://collection.leomilgroup.com" rel="external">Collection</a></li>
+            {% for link in site.navigation %}
+              {% assign current = nil %}
+              {% if page.url == link.url or page.layout == link.layout %}
+                {% assign current = 'current' %}
+              {% endif %}
+              <li class="{% if forloop.first %}first{% endif %} {% if forloop.last %}last{% endif %}">
+                <a class="{{current}}" href="{{site.baseurl}}/{{link.url}}">{{link.text}}</a>
+              </li>
+            {% endfor %}
           </ul>
+          {% endunless %} 
         </div><!--/.nav-collapse -->
       </div>
     </nav>

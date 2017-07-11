@@ -1,0 +1,48 @@
+/* IMAGE HELPERS */
+.img-center {margin:0 auto;}
+
+/* ROW & SECTION SPACER */
+.space-25 {margin-bottom:25px;margin-top:25px;}
+.space-50 {margin-bottom:50px;margin-top:50px;}
+.space-75 {margin-bottom:75px;margin-top:75px;}
+.space-100 {margin-bottom:100px;margin-top:100px;}
+.space-200 {margin-bottom:200px;margin-top:200px;}
+.space-bottom-25 {margin-bottom:50px;}
+.space-bottom-50 {margin-bottom:50px;}
+.space-bottom-75 {margin-bottom:75px;}
+.space-bottom-100 {margin-bottom:100px;}
+.space-bottom-200 {margin-bottom:200px;}
+
+/* TOP MARGIN TO ROWS WHEN STACKED */
+/* ADD ROW-GRID CLASS TO ROW TO APPLY */
+.row.row-grid [class*="col-"] + [class*="col-"] {margin-top: 25px;}
+@media (min-width: 1200px) {.row.row-grid [class*="col-lg-"] + [class*="col-lg-"] {margin-top:0;}}
+@media (min-width: 992px) {.row.row-grid [class*="col-md-"] + [class*="col-md-"] {margin-top:0;}}
+@media (min-width: 768px) {.row.row-grid [class*="col-sm-"] + [class*="col-sm-"] {margin-top:0;}}
+
+/* TEXT ALIGNMENT - CHANGE RESPONSIVLY */
+.text-xs-left { text-align: left; }
+.text-xs-right { text-align: right; }
+.text-xs-center { text-align: center; }
+.text-xs-justify { text-align: justify; }
+
+@media (min-width: 768px) {
+    .text-sm-left { text-align: left; }
+    .text-sm-right { text-align: right; }
+    .text-sm-center { text-align: center; }
+    .text-sm-justify { text-align: justify; }
+}
+
+@media (min-width: 992px) {
+    .text-md-left { text-align: left; }
+    .text-md-right { text-align: right; }
+    .text-md-center { text-align: center; }
+    .text-md-justify { text-align: justify; }
+}
+
+@media (min-width: 1200px) {
+    .text-lg-left { text-align: left; }
+    .text-lg-right { text-align: right; }
+    .text-lg-center { text-align: center; }
+    .text-lg-justify { text-align: justify; }
+}
