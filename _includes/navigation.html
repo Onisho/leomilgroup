@@ -11,11 +11,10 @@
           <a class="navbar-brand" href="{{site.baseurl}}/index">Leomil Group</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          {% unless page.layout == 'front' %}
           <ul class="nav navbar-nav">
             {% for link in site.navigation %}
               {% assign current = nil %}
-              {% if page.url == link.url or page.layout == link.layout %}
+              {% if link.url == page.url %}
                 {% assign current = 'current' %}
               {% endif %}
               <li class="{% if forloop.first %}first{% endif %} {% if forloop.last %}last{% endif %}">
@@ -23,7 +22,6 @@
               </li>
             {% endfor %}
           </ul>
-          {% endunless %} 
         </div><!--/.nav-collapse -->
       </div>
     </nav>
