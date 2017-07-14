@@ -10,8 +10,8 @@ navigation:
   url: /brands-licenses
 - text: Global Presence
   url: /global-presence
-- text: Test
-  url: /news1
+- text: News
+  url: /news
 - text: Contact
   url: /contact
 - text: Collection
