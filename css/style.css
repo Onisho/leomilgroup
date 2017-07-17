@@ -38,6 +38,11 @@ h4, .h4 {font-family: 'Oswald', sans-serif;font-weight:300;}
 .company h2 span {border: 3px solid #e3e3e3;display:inline-block;padding:8px;}
 .offices p {border-left:4px solid #ec0185;padding-left:15px;}
 
+/* CONTACT */
+.contact-wrap {background-color:#fff;box-shadow:2px 3px 9px #cccccc;border:1px solid #e3e3e3;position:relative;}
+.contact-wrap form {padding:25px;font-family: 'Oswald', sans-serif;}
+.contact-wrap .bottom {background:transparent url('../img/contact.png') 50% 0 no-repeat;position:absolute;bottom:-50px;width:100%;height:75px;z-index:999;}
+
 /* FOOTER */
 .footer {background-color:#1a1b1d;color:#7a7b7c;}
 .footer a {color:#fff;}
@@ -62,7 +67,7 @@ h4, .h4 {font-family: 'Oswald', sans-serif;font-weight:300;}
 .navbar-default .navbar-nav {display:inline-block;float:none;}
 .navbar-default .navbar-collapse {text-align:center;}
 @media (min-width: 768px){
-  .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {margin-left:0px !important;}
+  .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {margin-left:0px !important;width:75px;}
   .navbar-default .navbar-nav>li>a {padding:25px 15px;}
   .navbar-brand {background:transparent url('../img/logo.png') no-repeat; height:104px;text-indent:-9999px;}
   .navbar-default {background: transparent url('../img/header.png') repeat-x;height:104px;margin-top:0px;font-family: 'Oswald', sans-serif;font-weight:300;font-size:1.2em;text-align:center;text-transform: uppercase;border-color:transparent;}
