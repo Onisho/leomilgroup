@@ -4,21 +4,15 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/style.css">
 </head>
-<body>
+<body class="{{page.bodyclass}}">
   
   <section class="navigation">
     {% include navigation.html %}
   </section>
   
-  <section class="content">
-    <div class="container">
-      <div class="row space-bottom-75">
-        <div class="col-xs-12">
-          {{content}}
-        </div>
-      </div>
-    </div>
-  </section>
+  <div class="wrap">
+    {{content}}
+  </div>
   
   <section class="postscript">
     {% include postscript.html %}
@@ -30,5 +24,8 @@
      
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="{{site.baseurl}}/js/masonry.pkgd.min.js"></script>
+<script src="{{site.baseurl}}/js/jquery.cycle2.min.js"></script>
+<script src="{{site.baseurl}}/js/main.js"></script>
 </body>
 </html>

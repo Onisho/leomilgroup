@@ -18,7 +18,12 @@
                 {% assign active = 'active' %}
               {% endif %}
               <li class="{% if forloop.first %}first{% endif %} {% if forloop.last %}last{% endif %}">
+                {% if link.url %}
                 <a class="{{active}}" href="{{site.baseurl}}{{link.url}}">{{link.text}}</a>
+                {% endif %}
+                {% if link.external_url %}
+                <a class="{{active}}" href="{{link.external_url}}" rel="external">{{link.text}}</a>
+                {% endif %}
               </li>
             {% endfor %}
           </ul>
