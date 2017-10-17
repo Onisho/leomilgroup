@@ -1,5 +1,5 @@
 #BASICS
-baseurl: 
+baseurl: /2017
 exclude: ['README.md']
 
 #NAVIGATION
