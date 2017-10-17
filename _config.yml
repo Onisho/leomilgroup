@@ -1,6 +1,7 @@
 #BASICS
 baseurl: /2017
 exclude: ['README.md']
+permalink: pretty
 
 #NAVIGATION
 navigation:
