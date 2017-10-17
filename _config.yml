@@ -1,5 +1,5 @@
 #BASICS
-baseurl: /leomilgroup
+baseurl: 
 exclude: ['README.md']
 
 #NAVIGATION
