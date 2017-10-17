@@ -22,7 +22,7 @@
             data.parameters = parameters;
             
             $.ajax({
-                    url: "https://testwebservices.cortina.be/form/contact",
+                    url: "https://webservices.cortina.be/form/contact",
                     type: "POST",
                     dataType: 'application/json',
                     data: JSON.stringify(data),
