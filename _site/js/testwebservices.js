@@ -10,19 +10,19 @@
             data.email = $("input#email").val();
             var parameters = [];
             var param1 = {};
-            param1.name = "testdata";
-            param1.value = $("input#testdata").val();
+            param1.name = "message";
+            param1.value = $("#message").val();
             parameters.push(param1);
             
             var param2 = {};
             param2.name = "subject";
-            param2.value = $("textarea#subject").val();
+            param2.value = $("#subject").val();
             parameters.push(param2);
             
             data.parameters = parameters;
             
             $.ajax({
-                    url: "https://testwebservices.cortina.be/form/contact",
+                    url: "https://webservices.cortina.be/form/contact",
                     type: "POST",
                     dataType: 'application/json',
                     data: JSON.stringify(data),
