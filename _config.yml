@@ -1,5 +1,5 @@
 #BASICS
-baseurl: /2017
+baseurl: 
 exclude: ['README.md']
 permalink: pretty
 
